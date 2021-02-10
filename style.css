@@ -1,0 +1,146 @@
+*{
+      box-sizing: border-box;
+      margin: 0; 
+    }
+  .gallery{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+    .gallery img{
+      width: 100%;
+      height: auto;
+      transition: 0.25 ease-in;
+    }
+    .gallery img:hover{
+      transform: scale(1.1);
+    }
+    .desc{
+      padding: 20px;
+      text-align: center;
+    }
+    .res-img{
+      width: 25%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 10px;
+      float: right; 
+    }
+    @media(max-width:968px){
+      .res-img{
+        width: 50%;
+        margin: 6px 0;
+        flex-direction: column;
+      }
+    }
+    @media(max-width:460px){
+      .res-img{
+        width: 100%;
+        flex-direction: column;   
+      }
+    }
+html {
+  font-size: 12px;
+}
+body {
+  font-family: Roboto Condensed;
+  font-size: 2rem;
+  line-height: 2;
+  text-align: center;
+  color: White;
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  padding: 0;
+}
+h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+@media (max-width: 460px) {
+  h1 {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+p{
+  font-size: 20px;
+}
+h2 {
+  font-size: 3rem;
+}
+a {
+  color: black;
+}
+#main {
+  padding: 20px;
+  background: #454441;
+}
+@media (max-width: 460px) {
+  #main {
+    margin: 0;
+  }
+}
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 30px;
+}
+#img-div {
+  background: white;
+  padding: 10px;
+  margin: 150px;
+}
+#img-caption {
+  margin: 15px 0 5px 0;
+  color: black;
+}
+@media (max-width: 460px) {
+  #img-caption {
+    font-size: 1.4rem;
+  }
+}
+#title1 {
+  text-align: center;
+  font-family: oswald;
+  text-indent: center;
+  color: YELLOW;
+  padding: 0px 0px 10px 0px;
+}
+#title{
+  text-indent: center;
+  text-align: center;
+   font-family: anton;
+  line-height: 60%;
+  color: white;
+  padding: 50px 0px 0px 0px;
+  font-size: 60px;
+}
+.tribute-info{
+  padding: 0px;
+  margin: 50px;
+}
+h3{
+  margin: 50px 0;
+  text-align: left;
+  font-size: 35px;
+  color: yellow;
+}
+ul {
+  max-width: 550px;
+  
+  text-align: left;
+  line-height: 1.6;
+}
+
+li {
+  margin: 20px 0;
+  text-align: left;
+  font-size: 20px;
+}
+.tribute-link{
+  color: yellow;
+}
